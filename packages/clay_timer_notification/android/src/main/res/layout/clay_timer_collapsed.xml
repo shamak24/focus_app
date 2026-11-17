@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Collapsed: one row on a raised clay card. -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingVertical="2dp">
+    <ImageView android:id="@+id/clay_shadow_far" android:layout_width="match_parent" android:layout_height="match_parent"
+        android:layout_marginStart="3dp" android:layout_marginTop="6dp" android:scaleType="fitXY" android:src="@drawable/clay_shape_card" />
+    <ImageView android:id="@+id/clay_shadow_near" android:layout_width="match_parent" android:layout_height="match_parent"
+        android:layout_marginStart="1.5dp" android:layout_marginTop="3dp" android:layout_marginBottom="1.5dp" android:scaleType="fitXY" android:src="@drawable/clay_shape_card" />
+    <ImageView android:id="@+id/clay_fill" android:layout_width="match_parent" android:layout_height="match_parent"
+        android:layout_marginEnd="3dp" android:layout_marginBottom="6dp" android:scaleType="fitXY" android:src="@drawable/clay_shape_card" />
+    <ImageView android:id="@+id/clay_sheen" android:layout_width="match_parent" android:layout_height="match_parent"
+        android:layout_marginEnd="3dp" android:layout_marginBottom="6dp" android:scaleType="fitXY" android:src="@drawable/clay_shape_card_sheen" />
+    <LinearLayout android:id="@+id/clay_content" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginEnd="3dp" android:layout_marginBottom="6dp"
+        android:orientation="horizontal" android:gravity="center_vertical"
+        android:paddingStart="14dp" android:paddingEnd="8dp" android:paddingVertical="5dp">
+        <FrameLayout android:id="@+id/clay_countdown" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <Chronometer android:id="@+id/clay_chrono" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_gravity="center" android:textSize="20sp" android:textStyle="bold" android:fontFeatureSettings="tnum" android:singleLine="true" />
+            <TextView android:id="@+id/clay_paused_time" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_gravity="center" android:textSize="20sp" android:textStyle="bold" android:fontFeatureSettings="tnum" android:singleLine="true" android:visibility="gone" />
+        </FrameLayout>
+        <TextView android:id="@+id/clay_title" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+            android:layout_marginStart="12dp" android:textSize="14sp" android:textStyle="bold" android:singleLine="true" android:ellipsize="end" />
+        <FrameLayout android:id="@+id/clay_toggle" android:layout_width="36dp" android:layout_height="36dp" android:layout_marginStart="6dp">
+            <ImageView android:id="@+id/clay_toggle_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY" />
+            <ImageView android:id="@+id/clay_toggle_icon" android:layout_width="18dp" android:layout_height="18dp"
+                android:layout_gravity="center" android:layout_marginBottom="1dp" android:importantForAccessibility="no" />
+        </FrameLayout>
+        <FrameLayout android:id="@+id/clay_stop" android:layout_width="36dp" android:layout_height="36dp" android:layout_marginStart="6dp">
+            <ImageView android:id="@+id/clay_stop_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY" />
+            <ImageView android:id="@+id/clay_stop_icon" android:layout_width="16dp" android:layout_height="16dp"
+                android:layout_gravity="center" android:layout_marginBottom="1dp" android:importantForAccessibility="no" />
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

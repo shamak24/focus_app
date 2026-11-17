@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="clay_widget_small_label">Focus timer</string>
+    <string name="clay_widget_small_description">Start focus, or pause and stop the running timer.</string>
+    <string name="clay_widget_medium_label">Focus timer and up next</string>
+    <string name="clay_widget_medium_description">The timer plus your next tasks, each ready to start.</string>
+    <string name="clay_start_focus">Start focus</string>
+    <string name="clay_pick_a_task">Pick a task</string>
+    <string name="clay_next_task">Next: %1$s</string>
+    <string name="clay_up_next">Up next</string>
+    <string name="clay_all_done">Nothing left for today</string>
+    <string name="clay_start_task">Start %1$s</string>
+    <string name="clay_pause">Pause</string>
+    <string name="clay_resume">Resume</string>
+    <string name="clay_stop">Stop</string>
+</resources>

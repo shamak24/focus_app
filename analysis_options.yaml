@@ -1,0 +1,20 @@
+include: package:flutter_lints/flutter.yaml
+
+analyzer:
+  errors:
+    # Newer Flutter releases flag `package:flutter/material.dart` in favour of
+    # a separate package. The import still works and keeps older SDKs building.
+    deprecated_member_use: ignore
+  exclude:
+    - build/**
+    - web/**
+    - android/**
+
+formatter:
+  page_width: 100
+
+linter:
+  rules:
+    prefer_const_constructors: true
+    prefer_final_locals: true
+    unawaited_futures: true

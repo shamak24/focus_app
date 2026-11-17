@@ -1,0 +1,46 @@
+name: focus_app
+description: Offline-first student focus app. Tasks, deadlines and a Pomodoro timer, with clay-style themes and XP.
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.8.0
+  flutter: ">=3.32.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  # State. `riverpod` is listed directly so the data and logic layers stay
+  # free of Flutter imports and can be tested as plain Dart.
+  flutter_riverpod: ^2.6.1
+  riverpod: ^2.6.1
+  # Local persistence.
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  # Reminders. v20+ uses named parameters, which lib/ depends on.
+  flutter_local_notifications: ">=20.0.0 <24.0.0"
+  timezone: ">=0.10.0 <0.12.0"
+  # Clay-styled timer notification and home-screen widgets (local Android plugin).
+  clay_timer_notification:
+    path: packages/clay_timer_notification
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ">=5.0.0 <7.0.0"
+
+flutter:
+  uses-material-design: true
+  fonts:
+    - family: Nunito
+      fonts:
+        - asset: assets/fonts/Nunito-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Nunito-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Nunito-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Nunito-ExtraBold.ttf
+          weight: 800
+        - asset: assets/fonts/Nunito-Black.ttf
+          weight: 900

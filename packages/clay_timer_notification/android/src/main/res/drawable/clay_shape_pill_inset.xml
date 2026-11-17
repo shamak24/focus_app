@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Shade along the top inside edge: makes the pill look pressed into the card. -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <corners android:radius="20dp" />
+    <gradient
+        android:angle="270"
+        android:startColor="#8C000000"
+        android:centerColor="#00000000"
+        android:endColor="#00000000"
+        android:centerY="0.4" />
+</shape>

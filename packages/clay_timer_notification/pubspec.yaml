@@ -1,0 +1,19 @@
+name: clay_timer_notification
+description: Clay-styled timer notification and home-screen widgets for the Focus app on Android.
+version: 0.1.0
+publish_to: none
+
+environment:
+  sdk: ^3.8.0
+  flutter: ">=3.32.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: com.focusapp.clay_timer_notification
+        pluginClass: ClayTimerNotificationPlugin
